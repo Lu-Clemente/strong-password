@@ -17,3 +17,7 @@
 4. Run the project:
 
 `$ expo start`
+
+## Preview
+
+https://user-images.githubusercontent.com/86859665/178129183-2e3b6ee0-7e40-4d24-a7b4-5574f4c33ed0.mp4
