@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Image, Keyboard, KeyboardAvoidingView } from "react-native";
+import { Image, Keyboard } from "react-native";
 import Button from "../../components/Button";
 import PasswordInput from "../../components/Input";
 import PasswordStatus from "../../components/PasswordStatus";
@@ -53,9 +53,13 @@ const CreatePassword = () => {
                     isFocused={isFocused}
                     setIsFocused={setIsFocused}
                 />
-                <PasswordStatus
-                    password={password}
-                />
+                {
+                    (isKeyboardVisible || password.length > 0) && (
+                        <PasswordStatus
+                            password={password}
+                        />
+                    )
+                }
                 <Button />
             </PasswordView>
         </Container>
