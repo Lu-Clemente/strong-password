@@ -21,7 +21,6 @@ const PasswordInput: React.FC<Props> = ({
     setPassword,
     showPassword,
     setShowPassword,
-    isFocused,
     setIsFocused
 }) => {
 
